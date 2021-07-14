@@ -4,7 +4,25 @@
     --color-line: #4c4a43;
 }
 
-.cart {
+.top {
+    background-color: purple;
+    width: 100%;
+    height: 123px;
+}
+
+.top .left {
+    background-color: blue;
+    width: 290px;
+    height: 100%;
+}
+
+.cart-trunk {
+    background-color: var(--backgrond-color-truck);
+    width: 195px;
+    height: 115px;
+}
+
+.cart-line {
     position: relative;
     width: 165px;
     height: 115px;
