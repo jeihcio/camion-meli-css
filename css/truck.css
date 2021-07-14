@@ -28,7 +28,7 @@
 .truck > .top > .left > .cart-trunk {
   position: relative;
   width: 273px;
-  height: 115px;
+  height: 114px;
   left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,7 +271,7 @@
 .truck > .bottom > .chassi > .fenders:nth-child(1)::before {
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, white 16px, transparent 0%);
+  background: linear-gradient(180deg, white 15px, transparent 0%);
   width: 57px;
   height: 57px;
   margin-left: -3px;
