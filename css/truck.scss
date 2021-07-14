@@ -17,14 +17,14 @@ $line-border: 3px;
             >.cart-trunk {
                 position: relative;
                 width: 273px;
-                height: 114px;
+                height: 115px;
                 left: 7px;
                 display: flex;
                 >.left {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    height: 100%;
+                    height: 114px;
                     width: 121px;
                     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
                     >div {
@@ -57,7 +57,7 @@ $line-border: 3px;
                 >.right {
                     background-color: $backgrond-color-truck;
                     width: 152px;
-                    height: 100%;
+                    height: 114px;
                     border-top-right-radius: 15px;
                 }
             }

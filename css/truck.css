@@ -28,7 +28,7 @@
 .truck > .top > .left > .cart-trunk {
   position: relative;
   width: 273px;
-  height: 114px;
+  height: 115px;
   left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +46,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100%;
+  height: 114px;
   width: 121px;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #ffd100));
   background: linear-gradient(90deg, white 60%, #ffd100 60%);
@@ -88,7 +88,7 @@
 .truck > .top > .left > .cart-trunk > .right {
   background-color: #ffd100;
   width: 152px;
-  height: 100%;
+  height: 114px;
   border-top-right-radius: 15px;
 }
 
