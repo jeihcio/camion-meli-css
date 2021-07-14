@@ -261,10 +261,37 @@
 
 .truck > .bottom > .chassi > .fenders {
   background-color: #fff;
-  width: 57px;
-  height: 57px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   margin-top: -12px;
+  border: 3px solid #4c4a43;
+}
+
+.truck > .bottom > .chassi > .fenders > .wheel {
+  position: relative;
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 3px solid #4c4a43;
+}
+
+.truck > .bottom > .chassi > .fenders > .wheel > .hubcap {
+  position: relative;
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border: 3px solid #4c4a43;
 }
 
@@ -286,7 +313,7 @@
   width: 57px;
   height: 27px;
   margin-left: -3px;
-  margin-top: 26px;
+  margin-top: -20px;
 }
 
 .truck > .bottom > .chassi > .fenders:nth-child(1) {
