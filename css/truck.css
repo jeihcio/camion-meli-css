@@ -1,9 +1,3 @@
-:root {
-  --backgrond-color-truck: #ffd100;
-  --color-text: #444445;
-  --color-line: #4c4a43;
-}
-
 .top {
   background-color: purple;
   width: 100%;
@@ -17,7 +11,7 @@
 }
 
 .cart-trunk {
-  background-color: var(--backgrond-color-truck);
+  background-color: #ffd100;
   width: 195px;
   height: 115px;
 }
@@ -29,7 +23,7 @@
   top: 10px;
   left: 125px;
   border-style: solid;
-  border-color: var(--color-line);
+  border-color: #4c4a43;
   border-top-width: 3px;
   border-right-width: 5px;
   border-bottom-width: 0px;
