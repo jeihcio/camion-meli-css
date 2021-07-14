@@ -14,19 +14,19 @@ $color-line: #4c4a43;
             background-color: blue;
             width: 290px;
             height: 100%;
-            display: flex;
-            flex-direction: row;
             .cart-trunk {
+                position: relative;
                 background-color: $backgrond-color-truck;
                 width: 195px;
                 height: 115px;
+                left: 7px;
             }
             .cart-line {
                 position: relative;
                 width: 165px;
                 height: 115px;
-                top: 10px;
-                // left: 125px;
+                top: -105px;
+                left: 125px;
                 border-style: solid;
                 border-color: $color-line;
                 border-top-width: 3px;

@@ -25,26 +25,22 @@
   background-color: blue;
   width: 290px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .truck .top .left .cart-trunk {
+  position: relative;
   background-color: #ffd100;
   width: 195px;
   height: 115px;
+  left: 7px;
 }
 
 .truck .top .left .cart-line {
   position: relative;
   width: 165px;
   height: 115px;
-  top: 10px;
+  top: -105px;
+  left: 125px;
   border-style: solid;
   border-color: #4c4a43;
   border-top-width: 3px;
