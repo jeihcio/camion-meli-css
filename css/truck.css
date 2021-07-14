@@ -268,6 +268,17 @@
   border: 3px solid #4c4a43;
 }
 
+.truck > .bottom > .chassi > .fenders:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, white 16px, transparent 0%);
+  width: 57px;
+  height: 57px;
+  margin-left: -3px;
+  margin-top: -18px;
+  border-radius: 50%;
+}
+
 .truck > .bottom > .chassi > .fenders::after {
   content: "";
   position: absolute;
