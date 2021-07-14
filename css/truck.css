@@ -36,14 +36,40 @@
 }
 
 .truck > .top > .left > .cart-trunk > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 100%;
   width: 121px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #ffd100));
+  background: linear-gradient(90deg, white 60%, #ffd100 60%);
 }
 
 .truck > .top > .left > .cart-trunk > .left > div {
   width: 100%;
   height: 20px;
   background-color: #ffd100;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(1) {
+  width: 97px;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(4) {
+  width: 85px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(5) {
+  width: 87px;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(odd) {
@@ -56,7 +82,7 @@
   background-color: #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  left: 6px;
+  right: -6px;
 }
 
 .truck > .top > .left > .cart-trunk > .right {
