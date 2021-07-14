@@ -203,11 +203,21 @@ $line-border: 3px;
             margin-left: 131px;
             display: flex;
             >.fenders {
-                background-color: red;
+                background-color: $color-background-screen;
                 width: 57px;
                 height: 57px;
                 border-radius: 50%;
                 margin-top: -12px;
+                border: $line-border solid $color-line;
+            }
+            >.fenders::after {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                width: 57px;
+                height: 27px;
+                margin-left: -3px;
+                margin-top: 26px;
             }
             >.fenders:nth-child(1) {
                 margin-left: 22px;
