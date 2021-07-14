@@ -109,6 +109,16 @@ $line-border: 3px;
                         transform: skewX(20.5deg);
                         border-right: $line-border solid $color-line;
                     }
+                    >.window-left {
+                        position: relative;
+                        background-color: #fff;
+                        width: 30px;
+                        height: 50px;
+                        margin-top: -55px;
+                        margin-left: 15px;
+                        border: $line-border solid $color-line;
+                        border-radius: 5px;
+                    }
                 }
                 >.bottom {
                     height: 42px;
