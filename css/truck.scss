@@ -4,24 +4,24 @@ $color-line: #4c4a43;
 .truck {
     display: flex;
     flex-direction: column;
-    .top {
+    >.top {
         display: flex;
         flex-direction: row;
         background-color: purple;
         width: 100%;
         height: 123px;
-        .left {
+        >.left {
             background-color: blue;
             width: 290px;
             height: 100%;
-            .cart-trunk {
+            >.cart-trunk {
                 position: relative;
-                background-color: $backgrond-color-truck;
+                background-color: green;
                 width: 195px;
                 height: 115px;
                 left: 7px;
             }
-            .cart-line {
+            >.cart-line {
                 position: relative;
                 width: 165px;
                 height: 115px;
@@ -36,13 +36,13 @@ $color-line: #4c4a43;
                 border-top-right-radius: 10%;
             }
         }
-        .right {
+        >.right {
             background-color: chartreuse;
             width: 190px;
             height: 100%;
         }
     }
-    .bottom {
+    >.bottom {
         background-color: aqua;
         width: 100%;
         height: 47px;
