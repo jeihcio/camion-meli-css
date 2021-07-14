@@ -168,6 +168,25 @@ $line-border: 3px;
                     border: $line-border solid $color-line;
                     border-top-width: 0;
                     background-color: $backgrond-color-truck;
+                    .logo-background {
+                        position: relative;
+                        width: 35px;
+                        height: 25px;
+                        top: 4px;
+                        margin-left: 50px;
+                        border-radius: 50%;
+                        background-color: #2b3372;
+                    }
+                    .logo {
+                        position: relative;
+                        background-color: $backgrond-color-truck;
+                        width: 35px;
+                        height: 25px;
+                        top: -22px;
+                        margin-left: 50px;
+                        border-radius: 50%;
+                        border: #2b3372 solid 2px;
+                    }
                 }
             }
         }

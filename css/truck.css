@@ -220,6 +220,27 @@
   background-color: #ffd100;
 }
 
+.truck > .top > .right > .cart-horse > .bottom .logo-background {
+  position: relative;
+  width: 35px;
+  height: 25px;
+  top: 4px;
+  margin-left: 50px;
+  border-radius: 50%;
+  background-color: #2b3372;
+}
+
+.truck > .top > .right > .cart-horse > .bottom .logo {
+  position: relative;
+  background-color: #ffd100;
+  width: 35px;
+  height: 25px;
+  top: -22px;
+  margin-left: 50px;
+  border-radius: 50%;
+  border: #2b3372 solid 2px;
+}
+
 .truck > .bottom {
   background-color: aqua;
   width: 100%;
