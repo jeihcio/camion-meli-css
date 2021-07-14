@@ -125,17 +125,36 @@
 }
 
 .truck > .top > .right > .cart-horse > .top {
-  height: 61%;
+  height: 66px;
   width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.truck > .top > .right > .cart-horse > .top > .rounded {
+  position: relative;
+  width: 90px;
+  height: 66px;
   background-color: #ffd100;
   border: 3px solid #4c4a43;
   border-bottom-width: 0;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 100px 130px;
+  border-radius: 15px 15px 0 0;
+}
+
+.truck > .top > .right > .cart-horse > .top > .tilted {
+  position: relative;
+  margin-top: -54px;
+  margin-left: 40px;
+  width: 60px;
+  height: 55px;
+  background-color: #ffd100;
+  -webkit-transform: skewX(20.5deg);
+          transform: skewX(20.5deg);
+  border-right: 3px solid #4c4a43;
 }
 
 .truck > .top > .right > .cart-horse > .bottom {
-  height: 39%;
+  height: 42px;
   width: 100%;
   border: 3px solid #4c4a43;
   border-top-width: 0;

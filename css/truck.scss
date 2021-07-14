@@ -86,16 +86,32 @@ $line-border: 3px;
                 height: 108px;
                 margin-left: 7px;
                 >.top {
-                    height: 61%;
+                    height: 66px;
                     width: 100%;
-                    background-color: $backgrond-color-truck;
-                    border: $line-border solid $color-line;
-                    border-bottom-width: 0;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 100px 130px;
+                    overflow: hidden;
+                    display: block;
+                    >.rounded {
+                        position: relative;
+                        width: 90px;
+                        height: 66px;
+                        background-color: $backgrond-color-truck;
+                        border: $line-border solid $color-line;
+                        border-bottom-width: 0;
+                        border-radius: 15px 15px 0 0;
+                    }
+                    >.tilted {
+                        position: relative;
+                        margin-top: -54px;
+                        margin-left: 40px;
+                        width: 60px;
+                        height: 55px;
+                        background-color: $backgrond-color-truck;
+                        transform: skewX(20.5deg);
+                        border-right: $line-border solid $color-line;
+                    }
                 }
                 >.bottom {
-                    height: 39%;
+                    height: 42px;
                     width: 100%;
                     border: $line-border solid $color-line;
                     border-top-width: 0;
