@@ -1,27 +1,50 @@
-.top {
+.truck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.truck .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: purple;
   width: 100%;
   height: 123px;
 }
 
-.top .left {
+.truck .top .left {
   background-color: blue;
   width: 290px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.cart-trunk {
+.truck .top .left .cart-trunk {
   background-color: #ffd100;
   width: 195px;
   height: 115px;
 }
 
-.cart-line {
+.truck .top .left .cart-line {
   position: relative;
   width: 165px;
   height: 115px;
   top: 10px;
-  left: 125px;
   border-style: solid;
   border-color: #4c4a43;
   border-top-width: 3px;
@@ -29,5 +52,17 @@
   border-bottom-width: 0px;
   border-left-width: 0px;
   border-top-right-radius: 10%;
+}
+
+.truck .top .right {
+  background-color: chartreuse;
+  width: 190px;
+  height: 100%;
+}
+
+.truck .bottom {
+  background-color: aqua;
+  width: 100%;
+  height: 47px;
 }
 /*# sourceMappingURL=truck.css.map */

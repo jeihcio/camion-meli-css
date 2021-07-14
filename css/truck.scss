@@ -1,34 +1,50 @@
 $backgrond-color-truck: #ffd100;
 $color-text: #444445;
 $color-line: #4c4a43;
-.top {
-    background-color: purple;
-    width: 100%;
-    height: 123px;
-    .left {
-        background-color: blue;
-        width: 290px;
-        height: 100%;
+.truck {
+    display: flex;
+    flex-direction: column;
+    .top {
+        display: flex;
+        flex-direction: row;
+        background-color: purple;
+        width: 100%;
+        height: 123px;
+        .left {
+            background-color: blue;
+            width: 290px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            .cart-trunk {
+                background-color: $backgrond-color-truck;
+                width: 195px;
+                height: 115px;
+            }
+            .cart-line {
+                position: relative;
+                width: 165px;
+                height: 115px;
+                top: 10px;
+                // left: 125px;
+                border-style: solid;
+                border-color: $color-line;
+                border-top-width: 3px;
+                border-right-width: 5px;
+                border-bottom-width: 0px;
+                border-left-width: 0px;
+                border-top-right-radius: 10%;
+            }
+        }
+        .right {
+            background-color: chartreuse;
+            width: 190px;
+            height: 100%;
+        }
     }
-}
-
-.cart-trunk {
-    background-color: $backgrond-color-truck;
-    width: 195px;
-    height: 115px;
-}
-
-.cart-line {
-    position: relative;
-    width: 165px;
-    height: 115px;
-    top: 10px;
-    left: 125px;
-    border-style: solid;
-    border-color: $color-line;
-    border-top-width: 3px;
-    border-right-width: 5px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-top-right-radius: 10%;
+    .bottom {
+        background-color: aqua;
+        width: 100%;
+        height: 47px;
+    }
 }
