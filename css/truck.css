@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 .truck {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +34,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.truck > .top > .left > .cart-trunk > .text {
+  position: absolute;
+  color: #444445;
+  height: 75px;
+  width: 175px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 30px;
 }
 
 .truck > .top > .left > .cart-trunk > .left {

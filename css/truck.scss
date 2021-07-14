@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 $backgrond-color-truck: #ffd100;
 $color-text: #444445;
 $color-line: #4c4a43;
@@ -20,6 +21,21 @@ $line-border: 3px;
                 height: 115px;
                 left: 7px;
                 display: flex;
+                >.text {
+                    position: absolute;
+                    color: $color-text;
+                    height: 75px;
+                    width: 175px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    text-transform: uppercase;
+                    font-family: 'Raleway', sans-serif;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-left: 30px;
+                }
                 >.left {
                     display: flex;
                     flex-direction: column;
