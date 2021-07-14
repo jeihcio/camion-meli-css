@@ -88,10 +88,11 @@ $line-border: 3px;
                 >.top {
                     height: 61%;
                     width: 100%;
+                    background-color: $backgrond-color-truck;
                     border: $line-border solid $color-line;
                     border-bottom-width: 0;
                     border-top-left-radius: 15px;
-                    background-color: $backgrond-color-truck;
+                    border-top-right-radius: 100px 130px;
                 }
                 >.bottom {
                     height: 39%;

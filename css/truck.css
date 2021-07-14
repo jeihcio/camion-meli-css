@@ -127,10 +127,11 @@
 .truck > .top > .right > .cart-horse > .top {
   height: 61%;
   width: 100%;
+  background-color: #ffd100;
   border: 3px solid #4c4a43;
   border-bottom-width: 0;
   border-top-left-radius: 15px;
-  background-color: #ffd100;
+  border-top-right-radius: 100px 130px;
 }
 
 .truck > .top > .right > .cart-horse > .bottom {
