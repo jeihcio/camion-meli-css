@@ -2,6 +2,7 @@ $backgrond-color-truck: #ffd100;
 $color-text: #444445;
 $color-line: #4c4a43;
 $color-background-screen: #fff;
+$line-border: 3px;
 .truck {
     display: flex;
     flex-direction: column;
@@ -68,8 +69,8 @@ $color-background-screen: #fff;
                 left: 125px;
                 border-style: solid;
                 border-color: $color-line;
-                border-top-width: 3px;
-                border-right-width: 5px;
+                border-top-width: $line-border;
+                border-right-width: $line-border;
                 border-bottom-width: 0px;
                 border-left-width: 0px;
                 border-top-right-radius: 15px;
