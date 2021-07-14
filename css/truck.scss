@@ -16,10 +16,21 @@ $color-line: #4c4a43;
             height: 100%;
             >.cart-trunk {
                 position: relative;
-                background-color: green;
-                width: 195px;
+                width: 273px;
                 height: 115px;
                 left: 7px;
+                display: flex;
+                .left {
+                    background-color: darkblue;
+                    height: 100%;
+                    width: 121px;
+                }
+                >.right {
+                    background-color: $backgrond-color-truck;
+                    width: 152px;
+                    height: 100%;
+                    border-top-right-radius: 15px;
+                }
             }
             >.cart-line {
                 position: relative;
@@ -33,7 +44,7 @@ $color-line: #4c4a43;
                 border-right-width: 5px;
                 border-bottom-width: 0px;
                 border-left-width: 0px;
-                border-top-right-radius: 10%;
+                border-top-right-radius: 15px;
             }
         }
         >.right {

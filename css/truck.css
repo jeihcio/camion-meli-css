@@ -29,10 +29,25 @@
 
 .truck > .top > .left > .cart-trunk {
   position: relative;
-  background-color: green;
-  width: 195px;
+  width: 273px;
   height: 115px;
   left: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.truck > .top > .left > .cart-trunk .left {
+  background-color: darkblue;
+  height: 100%;
+  width: 121px;
+}
+
+.truck > .top > .left > .cart-trunk > .right {
+  background-color: #ffd100;
+  width: 152px;
+  height: 100%;
+  border-top-right-radius: 15px;
 }
 
 .truck > .top > .left > .cart-line {
@@ -47,7 +62,7 @@
   border-right-width: 5px;
   border-bottom-width: 0px;
   border-left-width: 0px;
-  border-top-right-radius: 10%;
+  border-top-right-radius: 15px;
 }
 
 .truck > .top > .right {
