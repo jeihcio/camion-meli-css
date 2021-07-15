@@ -1,0 +1,5 @@
+@mixin animation($nameAnimation) {
+    animation: infinite #{$nameAnimation} $time-animation;
+    animation-delay: $animation-delay-initial;
+    animation-timing-function: ease;
+}

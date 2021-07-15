@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-$backgrond-color-truck: #ffd100;
-$color-text: #444445;
-$color-line: #4c4a43;
-$color-background-screen: #fff;
-$line-border: 3px;
-$animation-delay-initial: 0.12s;
-$time-animation: 2.5s;
-$enable-animation: true;
-@mixin animation($nameAnimation) {
-    animation: infinite #{$nameAnimation} $time-animation;
-    animation-delay: $animation-delay-initial;
-    animation-timing-function: ease;
-}
-
 .truck {
     position: relative;
     display: flex;

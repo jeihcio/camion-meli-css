@@ -1,4 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.screen {
+  background-color: #fff;
+  width: 480px;
+  height: 174px;
+  overflow: hidden;
+}
+
 .truck {
   position: relative;
   display: -webkit-box;
@@ -425,4 +456,172 @@
 .truck > .bottom > .chassi > .fenders:nth-child(2) {
   margin-left: 95px;
 }
-/*# sourceMappingURL=truck.css.map */
+
+@-webkit-keyframes walk {
+  0% {
+    left: -410px;
+  }
+  50% {
+    left: 77px;
+  }
+  89% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    left: 350px;
+    visibility: hidden;
+  }
+}
+
+@keyframes walk {
+  0% {
+    left: -410px;
+  }
+  50% {
+    left: 77px;
+  }
+  89% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    left: 350px;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes show-logo {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes show-logo {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes text-show-left-to-right {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes text-show-left-to-right {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes text-show-right-to-left {
+  0% {
+    margin-left: -273px;
+  }
+  25% {
+    margin-left: -273px;
+  }
+  40% {
+    margin-left: -443px;
+  }
+  100% {
+    margin-left: -443px;
+  }
+}
+
+@keyframes text-show-right-to-left {
+  0% {
+    margin-left: -273px;
+  }
+  25% {
+    margin-left: -273px;
+  }
+  40% {
+    margin-left: -443px;
+  }
+  100% {
+    margin-left: -443px;
+  }
+}
+
+@-webkit-keyframes color-horse {
+  0%,
+  10% {
+    background-position-x: 110px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes color-horse {
+  0%,
+  10% {
+    background-position-x: 110px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=all.css.map */
