@@ -39,13 +39,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: -410px;
-  -webkit-animation: infinite walk 2.5s;
-          animation: infinite walk 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top {
@@ -93,13 +86,6 @@ body {
 
 .truck > .top > .left > .cart-trunk > .text > .leftToRight {
   overflow: hidden;
-  width: 0%;
-  -webkit-animation: infinite text-show-left-to-right 2.5s;
-          animation: infinite text-show-left-to-right 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .text > .rightToLeft {
@@ -113,13 +99,6 @@ body {
   background-color: #ffd100;
   width: 273px;
   height: 40px;
-  margin-left: -273px;
-  -webkit-animation: infinite text-show-right-to-left 2.5s;
-          animation: infinite text-show-right-to-left 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left {
@@ -137,12 +116,17 @@ body {
   width: 121px;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #ffd100));
   background: linear-gradient(90deg, white 60%, #ffd100 60%);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div {
   width: 100%;
   height: 20px;
-  background-color: #ffd100;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(1) {
@@ -162,18 +146,33 @@ body {
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(odd) {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(even) {
   position: relative;
-  background-color: #fff;
+  background: #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   right: -6px;
 }
 
 .truck > .top > .left > .cart-trunk > .right {
-  background-color: #ffd100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   width: 152px;
   height: 114px;
   border-top-right-radius: 15px;
@@ -227,12 +226,6 @@ body {
   border-radius: 15px 15px 0 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
   background-image: linear-gradient(#ffd100);
-  -webkit-animation: infinite color-horse 2.5s;
-          animation: infinite color-horse 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .top > .square {
@@ -243,12 +236,6 @@ body {
   height: 55px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
   background-image: linear-gradient(#ffd100);
-  -webkit-animation: infinite color-horse 2.5s;
-          animation: infinite color-horse 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .top > .tilted {
@@ -263,12 +250,6 @@ body {
   background-color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
   background-image: linear-gradient(#ffd100);
-  -webkit-animation: infinite color-horse 2.5s;
-          animation: infinite color-horse 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .top > .window-left {
@@ -337,21 +318,6 @@ body {
   border-top-width: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #ffd100), color-stop(10%, transparent));
   background: linear-gradient(180deg, #ffd100 90%, transparent 10%);
-  -webkit-animation: infinite color-horse 2.5s;
-          animation: infinite color-horse 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-.truck > .top > .right > .cart-horse > .bottom > .logo-all {
-  -webkit-animation: infinite show-logo 2.5s;
-          animation: infinite show-logo 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo-background {
@@ -614,6 +580,36 @@ body {
   0%,
   10% {
     background-position-x: 110px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@-webkit-keyframes color-cart {
+  0%,
+  10% {
+    background-position-x: 5000px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes color-cart {
+  0%,
+  10% {
+    background-position-x: 5000px;
     background-repeat: no-repeat;
   }
   18% {

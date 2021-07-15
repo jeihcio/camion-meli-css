@@ -61,10 +61,10 @@
                     height: 114px;
                     width: 121px;
                     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
+                    @include animation(color-cart);
                     >div {
                         width: 100%;
                         height: 20px;
-                        background-color: $backgrond-color-truck;
                     }
                     >div:nth-child(1) {
                         width: 97px;
@@ -79,17 +79,20 @@
                     >div:nth-child(odd) {
                         border-top-left-radius: 8px;
                         border-bottom-left-radius: 8px;
+                        background: linear-gradient($backgrond-color-truck);
+                        @include animation(color-cart);
                     }
                     >div:nth-child(even) {
                         position: relative;
-                        background-color: $color-background-screen;
+                        background: $color-background-screen;
                         border-top-right-radius: 8px;
                         border-bottom-right-radius: 8px;
                         right: -6px;
                     }
                 }
                 >.right {
-                    background-color: $backgrond-color-truck;
+                    background: linear-gradient($backgrond-color-truck);
+                    @include animation(color-cart);
                     width: 152px;
                     height: 114px;
                     border-top-right-radius: 15px;

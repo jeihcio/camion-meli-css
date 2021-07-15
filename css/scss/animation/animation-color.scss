@@ -12,3 +12,18 @@
         background-repeat: no-repeat;
     }
 }
+
+@keyframes color-cart {
+    0%,
+    10% {
+        background-position-x: 5000px;
+        background-repeat: no-repeat;
+    }
+    18% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 0px;
+        background-repeat: no-repeat;
+    }
+}
