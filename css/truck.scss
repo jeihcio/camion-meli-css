@@ -6,14 +6,21 @@ $color-background-screen: #fff;
 $line-border: 3px;
 $animation-delay-initial: 0.12s;
 $time-animation: 2.5s;
+$enable-animation: false;
+@mixin animation($nameAnimation) {
+    animation: infinite #{$nameAnimation} $time-animation;
+    animation-delay: $animation-delay-initial;
+    animation-timing-function: ease;
+}
+
 .truck {
     position: relative;
     display: flex;
     flex-direction: column;
-    left: -410px;
-    animation: infinite walk $time-animation;
-    animation-delay: $animation-delay-initial;
-    animation-timing-function: ease;
+    @if $enable-animation {
+        left: -410px;
+        @include animation(walk)
+    }
     >.top {
         display: flex;
         flex-direction: row;
@@ -42,6 +49,11 @@ $time-animation: 2.5s;
                     font-size: 30px;
                     line-height: 40px;
                     margin-left: 30px;
+                    >.leftToRight {
+                        background-color: red;
+                        overflow: hidden;
+                    }
+                    >.rightToLeft {}
                 }
                 >.left {
                     display: flex;
@@ -192,8 +204,9 @@ $time-animation: 2.5s;
                     border-top-width: 0;
                     background: linear-gradient(180deg, $backgrond-color-truck 90%, transparent 10%);
                     >.logo-all {
-                        animation: infinite show-logo $time-animation;
-                        animation-delay: $animation-delay-initial;
+                        @if $enable-animation {
+                            @include animation(show-logo)
+                        }
                         >.logo-background {
                             position: relative;
                             width: 35px;

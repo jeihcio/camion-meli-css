@@ -32,3 +32,5 @@
         transform: scale(1);
     }
 }
+
+@keyframes text-show-left-to-right {}
