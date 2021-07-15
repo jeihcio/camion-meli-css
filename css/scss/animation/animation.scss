@@ -1,0 +1,64 @@
+@keyframes walk {
+    0% {
+        left: -410px;
+    }
+    50% {
+        left: 77px;
+    }
+    89% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100% {
+        left: 350px;
+        visibility: hidden;
+    }
+}
+
+@keyframes show-logo {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes text-show-left-to-right {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 0%;
+    }
+    40% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes text-show-right-to-left {
+    0% {
+        margin-left: -273px;
+    }
+    14% {
+        margin-left: -273px;
+    }
+    25% {
+        margin-left: -443px;
+    }
+    100% {
+        margin-left: -443px;
+    }
+}

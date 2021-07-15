@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-$backgrond-color-truck: #ffd100;
-$color-text: #444445;
-$color-line: #4c4a43;
-$color-background-screen: #fff;
-$line-border: 3px;
+@import 'variable.scss';
+@import 'mixin.scss';
 .truck {
+    position: relative;
     display: flex;
     flex-direction: column;
+    @if $enable-animation {
+        left: -410px;
+        @include animation(walk)
+    }
     >.top {
         display: flex;
         flex-direction: row;
@@ -31,10 +32,29 @@ $line-border: 3px;
                     transform: translate(-50%, -50%);
                     text-transform: uppercase;
                     font-family: 'Raleway', sans-serif;
-                    text-align: center;
                     font-size: 30px;
                     line-height: 40px;
-                    margin-left: 30px;
+                    margin-left: 38px;
+                    >.leftToRight {
+                        overflow: hidden;
+                        @if $enable-animation {
+                            width: 0%;
+                            @include animation(text-show-left-to-right);
+                        }
+                    }
+                    >.rightToLeft {
+                        overflow: hidden;
+                        display: flex;
+                        >.cut-mask {
+                            width: 273px;
+                            height: 40px;
+                            background: #fff;
+                            @if $enable-animation {
+                                margin-left: -273px;
+                                @include animation(text-show-right-to-left);
+                            }
+                        }
+                    }
                 }
                 >.left {
                     display: flex;
@@ -42,17 +62,19 @@ $line-border: 3px;
                     align-items: flex-end;
                     height: 114px;
                     width: 121px;
-                    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
+                    @if $enable-animation {
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
+                        @include animation(color-cart);
+                    }
                     >div {
                         width: 100%;
                         height: 20px;
-                        background-color: $backgrond-color-truck;
                     }
                     >div:nth-child(1) {
                         width: 97px;
                     }
                     >div:nth-child(4) {
-                        width: 85px;
+                        width: 80px;
                         align-self: flex-start;
                     }
                     >div:nth-child(5) {
@@ -61,17 +83,24 @@ $line-border: 3px;
                     >div:nth-child(odd) {
                         border-top-left-radius: 8px;
                         border-bottom-left-radius: 8px;
+                        @if $enable-animation {
+                            background: linear-gradient($backgrond-color-truck);
+                            @include animation(color-cart);
+                        }
                     }
                     >div:nth-child(even) {
                         position: relative;
-                        background-color: $color-background-screen;
+                        background: $color-background-screen;
                         border-top-right-radius: 8px;
                         border-bottom-right-radius: 8px;
                         right: -6px;
                     }
                 }
                 >.right {
-                    background-color: $backgrond-color-truck;
+                    @if $enable-animation {
+                        background: linear-gradient($backgrond-color-truck);
+                        @include animation(color-cart);
+                    }
                     width: 152px;
                     height: 114px;
                     border-top-right-radius: 15px;
@@ -110,20 +139,38 @@ $line-border: 3px;
                         position: relative;
                         width: 90px;
                         height: 66px;
-                        background-color: $backgrond-color-truck;
                         border: $line-border solid $color-line;
                         border-bottom-width: 0;
                         border-radius: 15px 15px 0 0;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
+                    }
+                    >.square {
+                        position: relative;
+                        margin-top: -54px;
+                        margin-left: 15px;
+                        width: 70px;
+                        height: 55px;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
                     }
                     >.tilted {
                         position: relative;
                         margin-top: -54px;
-                        margin-left: 40px;
-                        width: 60px;
+                        margin-left: 30px;
+                        width: 70px;
                         height: 55px;
-                        background-color: $backgrond-color-truck;
                         transform: skewX(20.5deg);
                         border-right: $line-border solid $color-line;
+                        background-color: #fff;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
                     }
                     >.window-left {
                         position: relative;
@@ -184,24 +231,32 @@ $line-border: 3px;
                     border: $line-border solid $color-line;
                     border-top-width: 0;
                     background: linear-gradient(180deg, $backgrond-color-truck 90%, transparent 10%);
-                    .logo-background {
-                        position: relative;
-                        width: 35px;
-                        height: 25px;
-                        top: 4px;
-                        margin-left: 50px;
-                        border-radius: 50%;
-                        background-color: #2b3372;
+                    @if $enable-animation {
+                        @include animation(color-horse);
                     }
-                    .logo {
-                        position: relative;
-                        background-color: $backgrond-color-truck;
-                        width: 35px;
-                        height: 25px;
-                        top: -22px;
-                        margin-left: 50px;
-                        border-radius: 50%;
-                        border: #2b3372 solid 2px;
+                    >.logo-all {
+                        @if $enable-animation {
+                            @include animation(show-logo)
+                        }
+                        >.logo-background {
+                            position: relative;
+                            width: 35px;
+                            height: 25px;
+                            top: 4px;
+                            margin-left: 50px;
+                            border-radius: 50%;
+                            background-color: #2b3372;
+                        }
+                        >.logo {
+                            position: relative;
+                            background-color: $backgrond-color-truck;
+                            width: 35px;
+                            height: 25px;
+                            top: -22px;
+                            margin-left: 50px;
+                            border-radius: 50%;
+                            border: #2b3372 solid 2px;
+                        }
                     }
                 }
             }

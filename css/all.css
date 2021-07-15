@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.screen {
+  background-color: #fff;
+  width: 480px;
+  height: 174px;
+  overflow: hidden;
+}
+
+.truck {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: -410px;
+  -webkit-animation: infinite walk 2.5s;
+          animation: infinite walk 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 123px;
+}
+
+.truck > .top > .left {
+  width: 290px;
+  height: 100%;
+}
+
+.truck > .top > .left > .cart-trunk {
+  position: relative;
+  width: 273px;
+  height: 115px;
+  left: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.truck > .top > .left > .cart-trunk > .text {
+  position: absolute;
+  color: #444445;
+  height: 75px;
+  width: 175px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 38px;
+}
+
+.truck > .top > .left > .cart-trunk > .text > .leftToRight {
+  overflow: hidden;
+  width: 0%;
+  -webkit-animation: infinite text-show-left-to-right 2.5s;
+          animation: infinite text-show-left-to-right 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .left > .cart-trunk > .text > .rightToLeft {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.truck > .top > .left > .cart-trunk > .text > .rightToLeft > .cut-mask {
+  width: 273px;
+  height: 40px;
+  background: #fff;
+  margin-left: -273px;
+  -webkit-animation: infinite text-show-right-to-left 2.5s;
+          animation: infinite text-show-right-to-left 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .left > .cart-trunk > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 114px;
+  width: 121px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #ffd100));
+  background: linear-gradient(90deg, white 60%, #ffd100 60%);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div {
+  width: 100%;
+  height: 20px;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(1) {
+  width: 97px;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(4) {
+  width: 80px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(5) {
+  width: 87px;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(odd) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .left > .cart-trunk > .left > div:nth-child(even) {
+  position: relative;
+  background: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  right: -6px;
+}
+
+.truck > .top > .left > .cart-trunk > .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-cart 2.5s;
+          animation: infinite color-cart 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  width: 152px;
+  height: 114px;
+  border-top-right-radius: 15px;
+}
+
+.truck > .top > .left > .cart-line {
+  position: relative;
+  width: 165px;
+  height: 113px;
+  top: -105px;
+  left: 125px;
+  border-style: solid;
+  border-color: #4c4a43;
+  border-top-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-right-radius: 15px;
+}
+
+.truck > .top > .right {
+  width: 190px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.truck > .top > .right > .cart-horse {
+  width: 110px;
+  height: 108px;
+  margin-left: 7px;
+}
+
+.truck > .top > .right > .cart-horse > .top {
+  height: 66px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.truck > .top > .right > .cart-horse > .top > .rounded {
+  position: relative;
+  width: 90px;
+  height: 66px;
+  border: 3px solid #4c4a43;
+  border-bottom-width: 0;
+  border-radius: 15px 15px 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .top > .square {
+  position: relative;
+  margin-top: -54px;
+  margin-left: 15px;
+  width: 70px;
+  height: 55px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .top > .tilted {
+  position: relative;
+  margin-top: -54px;
+  margin-left: 30px;
+  width: 70px;
+  height: 55px;
+  -webkit-transform: skewX(20.5deg);
+          transform: skewX(20.5deg);
+  border-right: 3px solid #4c4a43;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-left {
+  position: relative;
+  background-color: #fff;
+  width: 30px;
+  height: 50px;
+  margin-top: -55px;
+  margin-left: 15px;
+  border: 3px solid #4c4a43;
+  border-radius: 5px;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-right {
+  position: relative;
+  margin-top: -50px;
+  margin-left: 48px;
+  height: 50px;
+  width: 47px;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-right > .top {
+  height: 45px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-right > .top > .rounded {
+  position: relative;
+  width: 35px;
+  height: 45px;
+  background-color: #fff;
+  border: 3px solid #4c4a43;
+  border-bottom-width: 0;
+  border-radius: 5px 15px 0 0;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-right > .top > .tilted {
+  position: relative;
+  margin-top: -37px;
+  margin-left: 13px;
+  width: 30px;
+  height: 52px;
+  background-color: #fff;
+  -webkit-transform: skewX(21deg);
+          transform: skewX(21deg);
+  border-right: 3px solid #4c4a43;
+  z-index: 99999;
+}
+
+.truck > .top > .right > .cart-horse > .top > .window-right > .bottom {
+  height: 5px;
+  width: 100%;
+  border: 3px solid #4c4a43;
+  border-top-width: 0px;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.truck > .top > .right > .cart-horse > .bottom {
+  height: 56px;
+  width: 100%;
+  border: 3px solid #4c4a43;
+  border-top-width: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #ffd100), color-stop(10%, transparent));
+  background: linear-gradient(180deg, #ffd100 90%, transparent 10%);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .bottom > .logo-all {
+  -webkit-animation: infinite show-logo 2.5s;
+          animation: infinite show-logo 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo-background {
+  position: relative;
+  width: 35px;
+  height: 25px;
+  top: 4px;
+  margin-left: 50px;
+  border-radius: 50%;
+  background-color: #2b3372;
+}
+
+.truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo {
+  position: relative;
+  background-color: #ffd100;
+  width: 35px;
+  height: 25px;
+  top: -22px;
+  margin-left: 50px;
+  border-radius: 50%;
+  border: #2b3372 solid 2px;
+}
+
+.truck > .bottom {
+  width: 100%;
+  height: 47px;
+}
+
+.truck > .bottom > .chassi {
+  position: relative;
+  width: 275px;
+  height: 20px;
+  border: 3px solid #4c4a43;
+  border-radius: 5px;
+  margin-left: 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.truck > .bottom > .chassi > .fenders {
+  background-color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-top: -12px;
+  border: 3px solid #4c4a43;
+}
+
+.truck > .bottom > .chassi > .fenders > .wheel {
+  position: relative;
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 3px solid #4c4a43;
+}
+
+.truck > .bottom > .chassi > .fenders > .wheel > .hubcap {
+  position: relative;
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 3px solid #4c4a43;
+}
+
+.truck > .bottom > .chassi > .fenders:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, white 15px, transparent 0%);
+  width: 57px;
+  height: 57px;
+  margin-left: -3px;
+  margin-top: -18px;
+  border-radius: 50%;
+}
+
+.truck > .bottom > .chassi > .fenders::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 57px;
+  height: 27px;
+  margin-left: -3px;
+  margin-top: -20px;
+}
+
+.truck > .bottom > .chassi > .fenders:nth-child(1) {
+  margin-left: 22px;
+}
+
+.truck > .bottom > .chassi > .fenders:nth-child(2) {
+  margin-left: 95px;
+}
+
+@-webkit-keyframes walk {
+  0% {
+    left: -410px;
+  }
+  50% {
+    left: 77px;
+  }
+  89% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    left: 350px;
+    visibility: hidden;
+  }
+}
+
+@keyframes walk {
+  0% {
+    left: -410px;
+  }
+  50% {
+    left: 77px;
+  }
+  89% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    left: 350px;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes show-logo {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes show-logo {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes text-show-left-to-right {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes text-show-left-to-right {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes text-show-right-to-left {
+  0% {
+    margin-left: -273px;
+  }
+  14% {
+    margin-left: -273px;
+  }
+  25% {
+    margin-left: -443px;
+  }
+  100% {
+    margin-left: -443px;
+  }
+}
+
+@keyframes text-show-right-to-left {
+  0% {
+    margin-left: -273px;
+  }
+  14% {
+    margin-left: -273px;
+  }
+  25% {
+    margin-left: -443px;
+  }
+  100% {
+    margin-left: -443px;
+  }
+}
+
+@-webkit-keyframes color-horse {
+  0%,
+  10% {
+    background-position-x: 110px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes color-horse {
+  0%,
+  10% {
+    background-position-x: 110px;
+    background-repeat: no-repeat;
+  }
+  18% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@-webkit-keyframes color-cart {
+  0%,
+  10% {
+    background-position-x: 50000px;
+    background-repeat: no-repeat;
+  }
+  22% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes color-cart {
+  0%,
+  10% {
+    background-position-x: 50000px;
+    background-repeat: no-repeat;
+  }
+  22% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=all.css.map */
