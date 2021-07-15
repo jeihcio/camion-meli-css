@@ -33,4 +33,17 @@
     }
 }
 
-@keyframes text-show-left-to-right {}
+@keyframes text-show-left-to-right {
+    0% {
+        width: 0%;
+    }
+    30% {
+        width: 0%;
+    }
+    41% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
