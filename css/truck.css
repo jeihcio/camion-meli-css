@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 .truck {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,6 +8,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  left: -410px;
+  -webkit-animation: infinite walk 2.5s;
+          animation: infinite walk 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
 }
 
 .truck > .top {

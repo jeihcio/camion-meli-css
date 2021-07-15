@@ -1,0 +1,11 @@
+@keyframes walk {
+    0% {
+        left: -410px;
+    }
+    50% {
+        left: 77px;
+    }
+    100% {
+        left: 470px;
+    }
+}
