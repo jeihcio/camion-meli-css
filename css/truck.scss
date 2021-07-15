@@ -4,13 +4,16 @@ $color-text: #444445;
 $color-line: #4c4a43;
 $color-background-screen: #fff;
 $line-border: 3px;
+$animation-delay-initial: 0.12s;
+$time-animation: 2.5s;
 .truck {
     position: relative;
     display: flex;
     flex-direction: column;
     left: -410px;
-    animation: infinite walk 2.5s;
-    animation-delay: 0.12s;
+    animation: infinite walk $time-animation;
+    animation-delay: $animation-delay-initial;
+    animation-timing-function: ease;
     >.top {
         display: flex;
         flex-direction: row;
@@ -188,24 +191,28 @@ $line-border: 3px;
                     border: $line-border solid $color-line;
                     border-top-width: 0;
                     background: linear-gradient(180deg, $backgrond-color-truck 90%, transparent 10%);
-                    .logo-background {
-                        position: relative;
-                        width: 35px;
-                        height: 25px;
-                        top: 4px;
-                        margin-left: 50px;
-                        border-radius: 50%;
-                        background-color: #2b3372;
-                    }
-                    .logo {
-                        position: relative;
-                        background-color: $backgrond-color-truck;
-                        width: 35px;
-                        height: 25px;
-                        top: -22px;
-                        margin-left: 50px;
-                        border-radius: 50%;
-                        border: #2b3372 solid 2px;
+                    >.logo-all {
+                        animation: infinite show-logo $time-animation;
+                        animation-delay: $animation-delay-initial;
+                        >.logo-background {
+                            position: relative;
+                            width: 35px;
+                            height: 25px;
+                            top: 4px;
+                            margin-left: 50px;
+                            border-radius: 50%;
+                            background-color: #2b3372;
+                        }
+                        >.logo {
+                            position: relative;
+                            background-color: $backgrond-color-truck;
+                            width: 35px;
+                            height: 25px;
+                            top: -22px;
+                            margin-left: 50px;
+                            border-radius: 50%;
+                            border: #2b3372 solid 2px;
+                        }
                     }
                 }
             }

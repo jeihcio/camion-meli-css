@@ -13,6 +13,8 @@
           animation: infinite walk 2.5s;
   -webkit-animation-delay: 0.12s;
           animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top {
@@ -245,7 +247,14 @@
   background: linear-gradient(180deg, #ffd100 90%, transparent 10%);
 }
 
-.truck > .top > .right > .cart-horse > .bottom .logo-background {
+.truck > .top > .right > .cart-horse > .bottom > .logo-all {
+  -webkit-animation: infinite show-logo 2.5s;
+          animation: infinite show-logo 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+}
+
+.truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo-background {
   position: relative;
   width: 35px;
   height: 25px;
@@ -255,7 +264,7 @@
   background-color: #2b3372;
 }
 
-.truck > .top > .right > .cart-horse > .bottom .logo {
+.truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo {
   position: relative;
   background-color: #ffd100;
   width: 35px;

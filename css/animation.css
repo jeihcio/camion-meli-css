@@ -5,7 +5,30 @@
     50% {
         left: 77px;
     }
+    89% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        visibility: hidden;
+    }
     100% {
-        left: 470px;
+        left: 350px;
+        visibility: hidden;
+    }
+}
+
+@keyframes show-logo {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
