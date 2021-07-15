@@ -116,12 +116,6 @@ body {
   width: 121px;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #ffd100));
   background: linear-gradient(90deg, white 60%, #ffd100 60%);
-  -webkit-animation: infinite color-cart 2.5s;
-          animation: infinite color-cart 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div {
@@ -148,12 +142,6 @@ body {
   border-bottom-left-radius: 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
   background: linear-gradient(#ffd100);
-  -webkit-animation: infinite color-cart 2.5s;
-          animation: infinite color-cart 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(even) {
@@ -167,12 +155,6 @@ body {
 .truck > .top > .left > .cart-trunk > .right {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
   background: linear-gradient(#ffd100);
-  -webkit-animation: infinite color-cart 2.5s;
-          animation: infinite color-cart 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
   width: 152px;
   height: 114px;
   border-top-right-radius: 15px;

@@ -61,7 +61,9 @@
                     height: 114px;
                     width: 121px;
                     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
-                    @include animation(color-cart);
+                    @if $enable-animation {
+                        @include animation(color-cart);
+                    }
                     >div {
                         width: 100%;
                         height: 20px;
@@ -80,7 +82,9 @@
                         border-top-left-radius: 8px;
                         border-bottom-left-radius: 8px;
                         background: linear-gradient($backgrond-color-truck);
-                        @include animation(color-cart);
+                        @if $enable-animation {
+                            @include animation(color-cart);
+                        }
                     }
                     >div:nth-child(even) {
                         position: relative;
@@ -92,7 +96,9 @@
                 }
                 >.right {
                     background: linear-gradient($backgrond-color-truck);
-                    @include animation(color-cart);
+                    @if $enable-animation {
+                        @include animation(color-cart);
+                    }
                     width: 152px;
                     height: 114px;
                     border-top-right-radius: 15px;
