@@ -1,9 +1,10 @@
 @keyframes color-horse {
-    0% {
+    0%,
+    10% {
         background-position-x: 110px;
         background-repeat: no-repeat;
     }
-    20% {
+    18% {
         background-position-x: 0px;
     }
     100% {
