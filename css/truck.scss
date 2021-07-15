@@ -6,7 +6,7 @@ $color-background-screen: #fff;
 $line-border: 3px;
 $animation-delay-initial: 0.12s;
 $time-animation: 2.5s;
-$enable-animation: true;
+$enable-animation: false;
 @mixin animation($nameAnimation) {
     animation: infinite #{$nameAnimation} $time-animation;
     animation-delay: $animation-delay-initial;
@@ -62,8 +62,8 @@ $enable-animation: true;
                             background-color: $backgrond-color-truck;
                             width: 273px;
                             height: 40px;
-                            margin-left: -273px;
                             @if $enable-animation {
+                                margin-left: -273px;
                                 @include animation(text-show-right-to-left)
                             }
                         }
