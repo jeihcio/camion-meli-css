@@ -44,9 +44,9 @@
                         overflow: hidden;
                         display: flex;
                         >.cut-mask {
-                            background-color: $backgrond-color-truck;
                             width: 273px;
                             height: 40px;
+                            background: #fff;
                             @if $enable-animation {
                                 margin-left: -273px;
                                 @include animation(text-show-right-to-left);
@@ -60,8 +60,8 @@
                     align-items: flex-end;
                     height: 114px;
                     width: 121px;
-                    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
                     @if $enable-animation {
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, $backgrond-color-truck 60%);
                         @include animation(color-cart);
                     }
                     >div {
@@ -81,8 +81,8 @@
                     >div:nth-child(odd) {
                         border-top-left-radius: 8px;
                         border-bottom-left-radius: 8px;
-                        background: linear-gradient($backgrond-color-truck);
                         @if $enable-animation {
+                            background: linear-gradient($backgrond-color-truck);
                             @include animation(color-cart);
                         }
                     }
@@ -95,8 +95,8 @@
                     }
                 }
                 >.right {
-                    background: linear-gradient($backgrond-color-truck);
                     @if $enable-animation {
+                        background: linear-gradient($backgrond-color-truck);
                         @include animation(color-cart);
                     }
                     width: 152px;
