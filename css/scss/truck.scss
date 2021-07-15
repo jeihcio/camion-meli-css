@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: column;
     @if $enable-animation {
-        // left: -410px;
-        // @include animation(walk)
+        left: -410px;
+        @include animation(walk)
     }
     >.top {
         display: flex;
