@@ -50,11 +50,25 @@
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   line-height: 40px;
-  margin-left: 30px;
+  margin-left: 38px;
 }
 
 .truck > .top > .left > .cart-trunk > .text > .leftToRight {
   overflow: hidden;
+}
+
+.truck > .top > .left > .cart-trunk > .text > .rightToLeft {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.truck > .top > .left > .cart-trunk > .text > .rightToLeft > .cut-mask {
+  background-color: #ffd100;
+  width: 273px;
+  height: 40px;
+  margin-left: -273px;
 }
 
 .truck > .top > .left > .cart-trunk > .left {
@@ -85,7 +99,7 @@
 }
 
 .truck > .top > .left > .cart-trunk > .left > div:nth-child(4) {
-  width: 85px;
+  width: 80px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }

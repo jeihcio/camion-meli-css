@@ -47,3 +47,18 @@
         width: 100%;
     }
 }
+
+@keyframes text-show-right-to-left {
+    0% {
+        margin-left: -273px;
+    }
+    30% {
+        margin-left: -273px;
+    }
+    41% {
+        margin-left: -443px;
+    }
+    100% {
+        margin-left: -443px;
+    }
+}

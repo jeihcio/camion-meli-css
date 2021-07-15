@@ -47,7 +47,7 @@ $enable-animation: false;
                     font-family: 'Raleway', sans-serif;
                     font-size: 30px;
                     line-height: 40px;
-                    margin-left: 30px;
+                    margin-left: 38px;
                     >.leftToRight {
                         overflow: hidden;
                         @if $enable-animation {
@@ -55,7 +55,19 @@ $enable-animation: false;
                             @include animation(text-show-left-to-right)
                         }
                     }
-                    >.rightToLeft {}
+                    >.rightToLeft {
+                        overflow: hidden;
+                        display: flex;
+                        >.cut-mask {
+                            background-color: $backgrond-color-truck;
+                            width: 273px;
+                            height: 40px;
+                            margin-left: -273px;
+                            @if $enable-animation {
+                                @include animation(text-show-right-to-left)
+                            }
+                        }
+                    }
                 }
                 >.left {
                     display: flex;
@@ -73,7 +85,7 @@ $enable-animation: false;
                         width: 97px;
                     }
                     >div:nth-child(4) {
-                        width: 85px;
+                        width: 80px;
                         align-self: flex-start;
                     }
                     >div:nth-child(5) {
