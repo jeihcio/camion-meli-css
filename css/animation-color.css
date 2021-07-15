@@ -1,0 +1,13 @@
+@keyframes color-horse {
+    0% {
+        background-position-x: 110px;
+        background-repeat: no-repeat;
+    }
+    20% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 0px;
+        background-repeat: no-repeat;
+    }
+}

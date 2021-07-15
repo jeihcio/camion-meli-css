@@ -8,6 +8,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  left: -410px;
+  -webkit-animation: infinite walk 2.5s;
+          animation: infinite walk 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top {
@@ -55,6 +62,13 @@
 
 .truck > .top > .left > .cart-trunk > .text > .leftToRight {
   overflow: hidden;
+  width: 0%;
+  -webkit-animation: infinite text-show-left-to-right 2.5s;
+          animation: infinite text-show-left-to-right 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .text > .rightToLeft {
@@ -68,6 +82,13 @@
   background-color: #ffd100;
   width: 273px;
   height: 40px;
+  margin-left: -273px;
+  -webkit-animation: infinite text-show-right-to-left 2.5s;
+          animation: infinite text-show-right-to-left 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .left > .cart-trunk > .left {
@@ -170,22 +191,53 @@
   position: relative;
   width: 90px;
   height: 66px;
-  background-color: #ffd100;
   border: 3px solid #4c4a43;
   border-bottom-width: 0;
   border-radius: 15px 15px 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .top > .square {
+  position: relative;
+  margin-top: -54px;
+  margin-left: 15px;
+  width: 70px;
+  height: 55px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .top > .tilted {
   position: relative;
   margin-top: -54px;
-  margin-left: 40px;
-  width: 60px;
+  margin-left: 30px;
+  width: 70px;
   height: 55px;
-  background-color: #ffd100;
   -webkit-transform: skewX(20.5deg);
           transform: skewX(20.5deg);
   border-right: 3px solid #4c4a43;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd100));
+  background-image: linear-gradient(#ffd100);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .top > .window-left {
@@ -254,6 +306,21 @@
   border-top-width: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #ffd100), color-stop(10%, transparent));
   background: linear-gradient(180deg, #ffd100 90%, transparent 10%);
+  -webkit-animation: infinite color-horse 2.5s;
+          animation: infinite color-horse 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.truck > .top > .right > .cart-horse > .bottom > .logo-all {
+  -webkit-animation: infinite show-logo 2.5s;
+          animation: infinite show-logo 2.5s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .truck > .top > .right > .cart-horse > .bottom > .logo-all > .logo-background {

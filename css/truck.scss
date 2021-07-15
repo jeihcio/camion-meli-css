@@ -6,7 +6,7 @@ $color-background-screen: #fff;
 $line-border: 3px;
 $animation-delay-initial: 0.12s;
 $time-animation: 2.5s;
-$enable-animation: false;
+$enable-animation: true;
 @mixin animation($nameAnimation) {
     animation: infinite #{$nameAnimation} $time-animation;
     animation-delay: $animation-delay-initial;
@@ -52,7 +52,7 @@ $enable-animation: false;
                         overflow: hidden;
                         @if $enable-animation {
                             width: 0%;
-                            @include animation(text-show-left-to-right)
+                            @include animation(text-show-left-to-right);
                         }
                     }
                     >.rightToLeft {
@@ -64,7 +64,7 @@ $enable-animation: false;
                             height: 40px;
                             @if $enable-animation {
                                 margin-left: -273px;
-                                @include animation(text-show-right-to-left)
+                                @include animation(text-show-right-to-left);
                             }
                         }
                     }
@@ -143,20 +143,38 @@ $enable-animation: false;
                         position: relative;
                         width: 90px;
                         height: 66px;
-                        background-color: $backgrond-color-truck;
                         border: $line-border solid $color-line;
                         border-bottom-width: 0;
                         border-radius: 15px 15px 0 0;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
+                    }
+                    >.square {
+                        position: relative;
+                        margin-top: -54px;
+                        margin-left: 15px;
+                        width: 70px;
+                        height: 55px;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
                     }
                     >.tilted {
                         position: relative;
                         margin-top: -54px;
-                        margin-left: 40px;
-                        width: 60px;
+                        margin-left: 30px;
+                        width: 70px;
                         height: 55px;
-                        background-color: $backgrond-color-truck;
                         transform: skewX(20.5deg);
                         border-right: $line-border solid $color-line;
+                        background-color: #fff;
+                        background-image: linear-gradient($backgrond-color-truck);
+                        @if $enable-animation {
+                            @include animation(color-horse);
+                        }
                     }
                     >.window-left {
                         position: relative;
@@ -217,6 +235,9 @@ $enable-animation: false;
                     border: $line-border solid $color-line;
                     border-top-width: 0;
                     background: linear-gradient(180deg, $backgrond-color-truck 90%, transparent 10%);
+                    @if $enable-animation {
+                        @include animation(color-horse);
+                    }
                     >.logo-all {
                         @if $enable-animation {
                             @include animation(show-logo)
