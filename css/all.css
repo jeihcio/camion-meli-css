@@ -39,13 +39,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: -410px;
-  -webkit-animation: infinite walk 2.5s;
-          animation: infinite walk 2.5s;
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 .truck > .top {
@@ -648,7 +641,7 @@ body {
 @-webkit-keyframes color-cart {
   0%,
   10% {
-    background-position-x: 1000px;
+    background-position-x: 5000px;
     background-repeat: no-repeat;
   }
   22% {
@@ -663,7 +656,37 @@ body {
 @keyframes color-cart {
   0%,
   10% {
-    background-position-x: 1000px;
+    background-position-x: 5000px;
+    background-repeat: no-repeat;
+  }
+  22% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@-webkit-keyframes color-cart-odd {
+  0%,
+  10% {
+    background-position-x: 5000px;
+    background-repeat: no-repeat;
+  }
+  22% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes color-cart-odd {
+  0%,
+  10% {
+    background-position-x: 5000px;
     background-repeat: no-repeat;
   }
   22% {
